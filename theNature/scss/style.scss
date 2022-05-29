@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+// =====================
+// Estilos Gerais
+// =====================
+
+body{
+    background-color: #a7774f;
+    font-family: 'Poppins',sans-serif;
+    padding:1rem;
+    color:#433834;
+}
+
+h1,h2,h3,p{
+   text-transform: capitalize;
+}
+
+h1,h2,h3{
+    margin: 1rem 0;
+    color:#6d5e55;
+    position: relative;
+}
+
+h2::after,
+h3::after{
+    position:absolute;
+    content:'';
+    width: 50px;
+    height: 5px;
+    background-color: #cdbaa7;
+    bottom: -10px;
+    left:0;
+}
+
+
+
+// =====================
+// Header
+// =====================
+
+header{
+    max-width: 1200px;
+    margin-inline: auto;
+    padding:10px;
+    border-bottom: 1px solid #bbc7c7;
+    text-align: center;
+}
+
+// =====================
+// Main
+// =====================
+
+main {
+    max-width: 1200px;
+    margin: 0 auto 1rem;
+    border-bottom: 1px solid #bbc7c7;
+  
+    article {
+      &.main-article {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #bbc7c7;
+        padding: 2rem 0;
+  
+        div:nth-child(1) {
+          flex: 1 1 400px;
+  
+          img {
+            max-width: 100%;
+            display: block;
+            border: 4px solid #cdbaa7;
+            border-radius: 4px;
+          }
+        }
+  
+        div:nth-child(2) {
+          flex: 1 1 400px;
+          align-self: center;
+        }
+      }
+    }
+  
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem 0;
+  
+      .img-container {
+        overflow: hidden;
+        border: 4px solid #cdbaa7;
+        border-radius: 4px;
+      }
+  
+      article {
+        overflow: hidden;
+        flex: 1 1 300px;
+  
+        img {
+          max-width: 100%;
+          display: block;
+          cursor: pointer;
+          transition: transform 0.2s linear;
+  
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
