@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700&family=Lexend+Deca:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 20%;
+    margin: 2rem 0 0 1.5rem;
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    margin: 1.5rem;
+    margin-top: 1rem;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+h2 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 30px;
+    color: hsl(0, 0%, 95%);
+    text-align: left;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    text-transform: uppercase;
+    margin-right: 114px;
+}
+.card {
+    width: 17rem;
+    height: 25rem;
+}
+.laranja {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.azul {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(184, 100%, 22%);
+}
+
+.verde {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(179, 100%, 13%);
+
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.btn {
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 40px;
+    border: hsl(0, 0%, 95%);
+}
+.btn1 {
+    color: hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+}
+.btn2 {
+    color: hsl(184, 100%, 22%);
+    background-color: hsl(0, 0%, 95%);
+}
+.btn3 {
+    margin-top: 2.5rem;
+    color: hsl(179, 100%, 13%);
+    background-color: hsl(0, 0%, 95%);
+}
+.btn1:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 80%, 59%);
+}
+.btn2:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(184, 97%, 27%);
+}
+.btn3:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 17%);
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:4rem;
+    }
+    .laranja {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(31, 77%, 52%);
+
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+    }
+
+    .azul {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(184, 100%, 22%);
+    }
+
+    .verde {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(179, 100%, 13%);
+
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 0;
+    }
+}
