@@ -1,5 +1,11 @@
 # Frontend Mentor - 3-column preview card component
 
+<div align="center">
+  <a href="https://3columnpreview-adrianalatorre.netlify.app/" target="_blank">Demo</a>
+  </div>
+<br/>
+
+
 ![Design preview for the 3-column preview card component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
