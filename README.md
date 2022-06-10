@@ -1,3 +1,3 @@
 # frontendmentorChallenge
 
-Exercises for the Mentor frontend platform to study CSS styles.
+Exercises from Frontend Mentor platform to study CSS styles.
